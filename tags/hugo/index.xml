@@ -25,6 +25,7 @@ hugo new site /foldername `
  脚本。网上的脚本千奇百怪，有每次都删除，然后重置仓库的。如果不用个人域名倒也没什么，问题是每次都清空仓库，会导致CNAME文件被删除，也就是指向个人域名的文件丢失。经过一番思考，还是使用官方脚本为妙，把public文件夹作为一个submodule，每次更新直接push到username.github.io这个仓库即可。
  添加个人域名后，由于在github操作，添加了CNAME文件，导致无法执行脚本。根本原因是submodule。submodule相当于在一个仓库里面另外储存了一个仓库。当我们在github上修改了username.github.io的时候，由于本地端与github端的hash值不同，导致push失败。解决办法其实很简单，pull下来再使用脚本即可。
 # 博客中的submodule文件夹，public cd public # 先把云端的改动pull下来，也就是之前在github上添加的CNAME文件 git pull # if (之前commit失败过，那么重新commit) # git commit -m &amp;#34;After pull CNAME&amp;#34; # 回到上一级，并运行脚本 cd .. ./d.sh  成功使自定义域名指向个人博客后，如果出现一些样式的小问题，也许这样可以解决。修改config.toml文件中的canonifyURLs = false2。似乎跟https无法加载某些资源有关。
+ yaml1的解析问题。key:后面必须跟1个空格，不多也不少，必须一个。汉字符号更别提了。
  额外提一下，注册域名的话.com一年只需要小几十块，相当便宜。目前正在腾讯云，还挺不错的。单纯使用国内域名注册商提供的域名，而不用服务器的话是不用备案的，只需实名认证即可。
 ​
   P.s. 官方的Deploy至Github Pages的教学以及d.sh脚本
