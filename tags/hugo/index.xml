@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Greeting.</title>
-    <link>https://eterlan.github.io/tags/hugo/</link>
+    <link>https://eterlan.com/tags/hugo/</link>
     <description>Recent content in Hugo on Greeting.</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 20 Jun 2019 11:28:25 +0800</lastBuildDate>
     
-	<atom:link href="https://eterlan.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eterlan.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo踩坑记</title>
-      <link>https://eterlan.github.io/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</link>
+      <link>https://eterlan.com/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</link>
       <pubDate>Thu, 20 Jun 2019 11:28:25 +0800</pubDate>
       
-      <guid>https://eterlan.github.io/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</guid>
+      <guid>https://eterlan.com/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</guid>
       <description>与Hexo不同，Hexo提供的 hexo g -d集生成发布于一体，而Hugo需要手动push仓库，这让我等对git不了解的同学可谓摔得鼻青脸肿。当然这也是一个很好的学习机会，洒家这就把埋地雷的地区给标记出来。
 前面的安装那些流程就不多说了，教学很多，关键是几个易错的地方。
  下载好Hugo，新建存放源文件的文件夹。

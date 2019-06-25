@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Greeting.</title>
-    <link>https://eterlan.github.io/tags/tutorial/</link>
+    <link>https://eterlan.com/tags/tutorial/</link>
     <description>Recent content in Tutorial on Greeting.</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 20 Jun 2019 11:28:25 +0800</lastBuildDate>
     
-	<atom:link href="https://eterlan.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eterlan.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo踩坑记</title>
-      <link>https://eterlan.github.io/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</link>
+      <link>https://eterlan.com/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</link>
       <pubDate>Thu, 20 Jun 2019 11:28:25 +0800</pubDate>
       
-      <guid>https://eterlan.github.io/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</guid>
+      <guid>https://eterlan.com/posts/2019/06/hugo%E8%B8%A9%E5%9D%91%E8%AE%B0/</guid>
       <description>与Hexo不同，Hexo提供的 hexo g -d集生成发布于一体，而Hugo需要手动push仓库，这让我等对git不了解的同学可谓摔得鼻青脸肿。当然这也是一个很好的学习机会，洒家这就把埋地雷的地区给标记出来。
 前面的安装那些流程就不多说了，教学很多，关键是几个易错的地方。
  下载好Hugo，新建存放源文件的文件夹。
@@ -35,10 +35,10 @@ GitHub User or Organization Pages
     
     <item>
       <title>如何使用Unity ECS打造Reactive System？</title>
-      <link>https://eterlan.github.io/posts/2019/06/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8unity-ecs%E6%89%93%E9%80%A0reactive-system/</link>
+      <link>https://eterlan.com/posts/2019/06/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8unity-ecs%E6%89%93%E9%80%A0reactive-system/</link>
       <pubDate>Wed, 19 Jun 2019 14:40:12 +0800</pubDate>
       
-      <guid>https://eterlan.github.io/posts/2019/06/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8unity-ecs%E6%89%93%E9%80%A0reactive-system/</guid>
+      <guid>https://eterlan.com/posts/2019/06/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8unity-ecs%E6%89%93%E9%80%A0reactive-system/</guid>
       <description>结构变化 所谓结构变化，即是Entity添加删除Component，诸如此类。追踪办法有两种。
 1. 使用SystemStateComponent 原理 所谓State，含义是只能被手动删除的Component，在删除Entity后，依然留下做一些殿后工作，只有被指名要求删除的时候才会被删除。这种特性就让我们可以通过不同的Query去获得结构变化的消息。
 栗子  假设我们有一个Entity，身上有两个组件，A：IComponentData 与 B: ISystemStateComponentData 当我们添加A组件的时候，通过Filter{ 有A无B }，我们可以在别处得知这个Entity何时被添加。在添加后手动加入B组件。 当我们删除Entity，或者移除A组件的时候，通过Filter { 有B无A }，同理可得知何时这个Entity被移除或是A组件被移除。  更具体的实现可以在查看官方对于ParentSystem的设计。

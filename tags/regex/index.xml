@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regex on Greeting.</title>
-    <link>https://eterlan.github.io/tags/regex/</link>
+    <link>https://eterlan.com/tags/regex/</link>
     <description>Recent content in Regex on Greeting.</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 19 Jun 2019 14:40:12 +0800</lastBuildDate>
     
-	<atom:link href="https://eterlan.github.io/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eterlan.com/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Regex Note</title>
-      <link>https://eterlan.github.io/posts/2019/06/regex-note/</link>
+      <link>https://eterlan.com/posts/2019/06/regex-note/</link>
       <pubDate>Wed, 19 Jun 2019 14:40:12 +0800</pubDate>
       
-      <guid>https://eterlan.github.io/posts/2019/06/regex-note/</guid>
+      <guid>https://eterlan.com/posts/2019/06/regex-note/</guid>
       <description>Regular Expression,正则表达式.历史悠久,其下又分了诸派,大同小异.今天便介绍其中最好上手的PCRE2一派. 表面都是些平常多见的字母与符号,暗地却尽是些叛徒. 主要分为:
  字母里有几个能偷偷叛变的的间谍,它们大同小异,都是匹配一些空白处的.
  \n换行 \s所有空格 \S所有非空格 \r回车  符号这边也有几个间谍,它们其中又分两个派别

@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://eterlan.github.io/fr/</loc>
+    <loc>https://eterlan.com/fr/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://eterlan.github.io/"
+                href="https://eterlan.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://eterlan.github.io/fr/"
+                href="https://eterlan.com/fr/"
                 />
   </url>
   
   <url>
-    <loc>https://eterlan.github.io/fr/</loc>
+    <loc>https://eterlan.com/fr/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://eterlan.github.io/"
+                href="https://eterlan.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://eterlan.github.io/fr/"
+                href="https://eterlan.com/fr/"
                 />
   </url>
   
   <url>
-    <loc>https://eterlan.github.io/fr/tags/</loc>
+    <loc>https://eterlan.com/fr/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://eterlan.github.io/tags/"
+                href="https://eterlan.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://eterlan.github.io/fr/tags/"
+                href="https://eterlan.com/fr/tags/"
                 />
   </url>
   
