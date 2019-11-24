@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gcp on Greeting.</title>
+    <link>https://eterlan.com/tags/gcp/</link>
+    <description>Recent content in Gcp on Greeting.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 24 Nov 2019 11:28:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://eterlan.com/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gcp之重建实例</title>
+      <link>https://eterlan.com/posts/2019/11/gcp%E4%B9%8B%E9%87%8D%E5%BB%BA%E5%AE%9E%E4%BE%8B/</link>
+      <pubDate>Sun, 24 Nov 2019 11:28:25 +0800</pubDate>
+      
+      <guid>https://eterlan.com/posts/2019/11/gcp%E4%B9%8B%E9%87%8D%E5%BB%BA%E5%AE%9E%E4%BE%8B/</guid>
+      <description>GCP设置 Compute Engine - &amp;gt; VM Instance
+选择任意已有的实例，选择上方的CREATE SIMILAR，搞定。
+console设置 一键脚本 sudo -i wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh chmod +x shadowsocks-all.sh ./shadowsocks-all.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks-all.log 大概等待10min，运行完成之后copy服务器配置信息。
+卸载命令 ./shadowsocks-all.sh uninstall 脚本命令 /etc/init.d/shadowsocks-libev start | stop | restart | status 配置文件目录 /etc/shadowsocks-libev/config.json 设置tls 打开配置文件
+vi /etc/shadowsocks-libev/config.json 现在是命令模式，输入i进入编辑模式。
+将最末行改成</description>
+    </item>
+    
+  </channel>
+</rss>

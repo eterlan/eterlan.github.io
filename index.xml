@@ -6,10 +6,24 @@
     <description>Recent content on Greeting.</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 25 Jun 2019 12:19:30 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 11:28:25 +0800</lastBuildDate>
     
 	<atom:link href="https://eterlan.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gcp之重建实例</title>
+      <link>https://eterlan.com/posts/2019/11/gcp%E4%B9%8B%E9%87%8D%E5%BB%BA%E5%AE%9E%E4%BE%8B/</link>
+      <pubDate>Sun, 24 Nov 2019 11:28:25 +0800</pubDate>
+      
+      <guid>https://eterlan.com/posts/2019/11/gcp%E4%B9%8B%E9%87%8D%E5%BB%BA%E5%AE%9E%E4%BE%8B/</guid>
+      <description>GCP设置 Compute Engine - &amp;gt; VM Instance
+选择任意已有的实例，选择上方的CREATE SIMILAR，搞定。
+console设置 一键脚本 sudo -i wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh chmod +x shadowsocks-all.sh ./shadowsocks-all.sh 2&amp;gt;&amp;amp;1 | tee shadowsocks-all.log 大概等待10min，运行完成之后copy服务器配置信息。
+卸载命令 ./shadowsocks-all.sh uninstall 脚本命令 /etc/init.d/shadowsocks-libev start | stop | restart | status 配置文件目录 /etc/shadowsocks-libev/config.json 设置tls 打开配置文件
+vi /etc/shadowsocks-libev/config.json 现在是命令模式，输入i进入编辑模式。
+将最末行改成</description>
+    </item>
     
     <item>
       <title>Unity Black Theme on Mac</title>
@@ -120,17 +134,6 @@ To begin, pick one game (not a game series–just one game!) you feel strongly a
       <guid>https://eterlan.com/posts/2019/06/test-behavior-of-nested-struct-in-unity-ecs/</guid>
       <description>Official ForEach test -&amp;gt; Unity.Entities.Tests/ForEach/ForEachGeneralTests.cs
 Nested Struct Test using NUnit.Framework;[TestFixture] public class UpdateNestedStructTests : ECSTestsFixture {[Test] public void _0_Update_Normal_Var() { var entity = m_Manager.CreateEntity(typeof(T)); World.GetOrCreateSystem&amp;lt;UpdateNestedStruct&amp;gt;().Update(); var target = m_Manager.GetComponentData&amp;lt;T&amp;gt;(entity).forTest; Assert.AreEqual(1,target); }[Test] public void _1_Update_Nested_Struct() { var entity = m_Manager.CreateEntity(typeof(T)); World.GetOrCreateSystem&amp;lt;UpdateNestedStruct&amp;gt;().Update(); var target = m_Manager.GetComponentData&amp;lt;T&amp;gt;(entity).point.X; Assert.AreEqual(1,target); } } UpdateBufferVar Test using NUnit.Framework;[TestFixture] public class UpdateBufferVarTest : ECSTestsFixture {[Test] public void _0_Update_One_Var() { var entity = m_Manager.CreateEntity(typeof(U)); World.GetOrCreateSystem&amp;lt;UpdateBufferWithMultipleElement&amp;gt;().Update(); var target = m_Manager.</description>
-    </item>
-    
-    <item>
-      <title>剑三往事</title>
-      <link>https://eterlan.com/posts/2019/06/%E5%89%91%E4%B8%89%E5%BE%80%E4%BA%8B/</link>
-      <pubDate>Wed, 19 Jun 2019 14:40:12 +0800</pubDate>
-      
-      <guid>https://eterlan.com/posts/2019/06/%E5%89%91%E4%B8%89%E5%BE%80%E4%BA%8B/</guid>
-      <description>一闭上眼，六年前的事历历在目，仿佛就发生在不久之前。实在是太可怕了，我不得不起身写下这些文字，以求丝毫慰藉。我记得，为了情缘抛弃的帮派，这个由师父一手建立，创立伊始我便参与其中的帮派。帮派最后的覆灭如摧枯拉朽，元老们的心血被付之一炬。我记得，欠下师姐的大扇子，让我一直无颜面对她。我记得一直为我出谋划策的亦风，A的时候我甚至没有前去合影。我记得因为贪玩，没有去挽回的前情缘。我记得我贪图技术，臭不要脸的拜了一个又一个万花师父。我记得一直陪我成长的师父，听到我队伍里不是在常跟你提起的她，错愕却又试图掩饰的语气。我记得师父不辞辛劳，一个boos一个boss讲解，我却转头去打pvp，真的十分抱歉，如果再来一次我想说去tm的pvp，有时间一定多陪陪你。
-我记得荻花的太多太多，我记得每一个陪我刷笛子的朋友，我记得慕容追风的语气语调。。&amp;rdquo;原来是些故人。&amp;rdquo;
-六年啊，如弹指之间，令人难以置信。我对不起很多人，我为我的自私和狭隘向你们道歉，我为每次不辞而别感到羞愧。我深深的感受到我是有罪的。不然为何每个曾关心过我的人都离我而去？旧日那些欢乐的时光与今日的形单只影形成了鲜明的对比，这不过是咎由自取罢了。台上炙烈的聚光灯打在我身上。电影早已散场，我却徒留原地。我想念你们，但又期盼你们能别像我一样，戴上往日的镣铐，难以挣脱。忘却吧，往事如云烟，时光不可辜负。我因过去的傲慢与愚蠢而无法向你们传达歉意与祝福，但我想一个人默默地祝福你们，衷心的祝福你们。</description>
     </item>
     
   </channel>
