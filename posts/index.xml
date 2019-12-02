@@ -6,8 +6,38 @@
         <description>Recent content in Posts on Greeting.</description>
         <generator>Hugo -- gohugo.io</generator>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 24 Nov 2019 11:28:25 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 02 Dec 2019 18:56:49 +0800</lastBuildDate>
         <atom:link href="https://eterlan.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How to fix Unity 2019.3 Editor Performance Problem</title>
+            <link>https://eterlan.com/posts/2019/12/how-to-fix-unity-2019.3-editor-performance-problem/</link>
+            <pubDate>Mon, 02 Dec 2019 18:56:49 +0800</pubDate>
+            
+            <guid>https://eterlan.com/posts/2019/12/how-to-fix-unity-2019.3-editor-performance-problem/</guid>
+            <description>These two months I had a lagging experience with untiy editor. I thought it was the problem of Odin or my old computer . But today I found it&amp;rsquo;s not at all. If you have this problem, maybe following steps would help you fix it.
+How to profile Editor  Open Window - &amp;gt; Analysis - &amp;gt; Profiler Click &amp;ldquo;PlayMode&amp;rdquo; button, and switch to Editor. Click the red round button, which is &amp;ldquo;Recording&amp;rdquo;, to stop at this frame.</description>
+            <content type="html"><![CDATA[
+
+<p>These two months I had a lagging experience with untiy editor. I thought it was the problem of Odin or my old computer . But today I found it&rsquo;s not at all. If you have this problem, maybe following steps would help you fix it.</p>
+
+<h2 id="how-to-profile-editor">How to profile Editor</h2>
+
+<ol>
+<li>Open Window - &gt; Analysis - &gt; Profiler</li>
+<li>Click &ldquo;PlayMode&rdquo; button, and switch to Editor.</li>
+<li>Click the red round button, which is &ldquo;Recording&rdquo;, to stop at this frame.</li>
+<li>Click at at frame in the visualizer.</li>
+<li>Click the hierarchy below, and find out which one use most time to run.</li>
+</ol>
+
+<h2 id="how-to-fix">How to fix</h2>
+
+<p>Thanks @peter77 &amp; @LeonhardP from unity forum fix this problem.</p>
+
+<p>[Unity Forum - BeginPackageInitialization called every Tick, causes 40ms cost](</p>
+]]></content>
+        </item>
         
         <item>
             <title>gcp之重建实例</title>
@@ -900,148 +930,6 @@ To begin, pick one game (not a game series–just one game!) you feel strongly a
 
 <li><p>最后一个 \ 它是世外高人,能帮助间谍背叛阵营,或者帮叛徒重回阵营</p></li>
 </ul>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Test behavior of nested struct in Unity ECS</title>
-            <link>https://eterlan.com/posts/2019/06/test-behavior-of-nested-struct-in-unity-ecs/</link>
-            <pubDate>Wed, 19 Jun 2019 14:40:12 +0800</pubDate>
-            
-            <guid>https://eterlan.com/posts/2019/06/test-behavior-of-nested-struct-in-unity-ecs/</guid>
-            <description>Official ForEach test -&amp;gt; Unity.Entities.Tests/ForEach/ForEachGeneralTests.cs
-Nested Struct Test using NUnit.Framework;[TestFixture] public class UpdateNestedStructTests : ECSTestsFixture {[Test] public void _0_Update_Normal_Var() { var entity = m_Manager.CreateEntity(typeof(T)); World.GetOrCreateSystem&amp;lt;UpdateNestedStruct&amp;gt;().Update(); var target = m_Manager.GetComponentData&amp;lt;T&amp;gt;(entity).forTest; Assert.AreEqual(1,target); }[Test] public void _1_Update_Nested_Struct() { var entity = m_Manager.CreateEntity(typeof(T)); World.GetOrCreateSystem&amp;lt;UpdateNestedStruct&amp;gt;().Update(); var target = m_Manager.GetComponentData&amp;lt;T&amp;gt;(entity).point.X; Assert.AreEqual(1,target); } } UpdateBufferVar Test using NUnit.Framework;[TestFixture] public class UpdateBufferVarTest : ECSTestsFixture {[Test] public void _0_Update_One_Var() { var entity = m_Manager.CreateEntity(typeof(U)); World.GetOrCreateSystem&amp;lt;UpdateBufferWithMultipleElement&amp;gt;().Update(); var target = m_Manager.</description>
-            <content type="html"><![CDATA[
-
-<p>Official ForEach test -&gt; Unity.Entities.Tests/ForEach/ForEachGeneralTests.cs</p>
-
-<h3 id="nested-struct-test">Nested Struct Test</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="color:#66d9ef">using</span> NUnit.Framework;<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">
-</span><span style="color:#a6e22e">[TestFixture]</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UpdateNestedStructTests</span> : ECSTestsFixture
-{<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [Test]</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> _0_Update_Normal_Var()
-    {
-        <span style="color:#66d9ef">var</span> entity = m_Manager.CreateEntity(<span style="color:#66d9ef">typeof</span>(T));
-
-        World.GetOrCreateSystem&lt;UpdateNestedStruct&gt;().Update();
-        <span style="color:#66d9ef">var</span> target = m_Manager.GetComponentData&lt;T&gt;(entity).forTest;
-        Assert.AreEqual(<span style="color:#ae81ff">1</span>,target);
-    }<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [Test]</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> _1_Update_Nested_Struct()
-    {
-        <span style="color:#66d9ef">var</span> entity = m_Manager.CreateEntity(<span style="color:#66d9ef">typeof</span>(T));
-        
-        World.GetOrCreateSystem&lt;UpdateNestedStruct&gt;().Update();
-        <span style="color:#66d9ef">var</span> target = m_Manager.GetComponentData&lt;T&gt;(entity).point.X;
-        Assert.AreEqual(<span style="color:#ae81ff">1</span>,target);
-    }
-}</code></pre></div>
-<h3 id="updatebuffervar-test">UpdateBufferVar Test</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="color:#66d9ef">using</span> NUnit.Framework;<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">
-</span><span style="color:#a6e22e">[TestFixture]</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UpdateBufferVarTest</span> : ECSTestsFixture
-{<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [Test]</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> _0_Update_One_Var()
-    {
-        <span style="color:#66d9ef">var</span> entity = m_Manager.CreateEntity(<span style="color:#66d9ef">typeof</span>(U));
-
-        World.GetOrCreateSystem&lt;UpdateBufferWithMultipleElement&gt;().Update();
-        <span style="color:#66d9ef">var</span> target = m_Manager.GetBuffer&lt;U&gt;(entity)<span style="color:#a6e22e">[0]</span>.Var1;
-        Assert.AreEqual(<span style="color:#ae81ff">1</span>, target);
-    }<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [Test]</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> _1_Update_Second_Var()
-    {
-        <span style="color:#66d9ef">var</span> entity = m_Manager.CreateEntity(<span style="color:#66d9ef">typeof</span>(U));
-
-        World.GetOrCreateSystem&lt;UpdateBufferWithMultipleElement&gt;().Update();
-        <span style="color:#66d9ef">var</span> target = m_Manager.GetBuffer&lt;U&gt;(entity)<span style="color:#a6e22e">[0]</span>.Var2;
-        Assert.AreEqual(<span style="color:#ae81ff">2</span>,target);
-    }<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">
-</span><span style="color:#a6e22e">    [Test]</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> _2_Modify_Existing_Element()
-    {
-        <span style="color:#66d9ef">var</span> entity = m_Manager.CreateEntity(<span style="color:#66d9ef">typeof</span>(U));
-        World.GetOrCreateSystem&lt;ModifyExistingElement&gt;().Update();
-        <span style="color:#66d9ef">var</span> target = m_Manager.GetBuffer&lt;U&gt;(entity)<span style="color:#a6e22e">[0]</span>.Var2;
-        Assert.AreEqual(<span style="color:#ae81ff">2</span>,target);
-    }
-}</code></pre></div>
-<h3 id="system">System</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="color:#66d9ef">using</span> Unity.Entities;
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UpdateNestedStruct</span> : ComponentSystem
-{
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> OnUpdate()
-    {
-        Entities.ForEach((<span style="color:#66d9ef">ref</span> T t) =&gt;
-        {
-            t.point.X += <span style="color:#ae81ff">1</span>;
-            t.forTest += <span style="color:#ae81ff">1</span>;            
-        });
-    }
-}
-<span style="color:#75715e">/// &lt;summary&gt;
-</span><span style="color:#75715e">/// How to Iterate Buffer? Can buffer contain more than one variables?
-</span><span style="color:#75715e">/// &lt;/summary&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UpdateBufferWithMultipleElement</span> : ComponentSystem
-{
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> OnUpdate()
-    {
-        Entities.ForEach ((DynamicBuffer&lt;U&gt; u)=&gt;
-        {
-            <span style="color:#66d9ef">var</span> element = <span style="color:#66d9ef">new</span> U { Var1 = <span style="color:#ae81ff">1</span>,Var2 = <span style="color:#ae81ff">2</span>};
-            u.Add(element);
-        });
-    }
-}
-
-<span style="color:#75715e">/// &lt;summary&gt;
-</span><span style="color:#75715e">/// How to modify existing element?
-</span><span style="color:#75715e">/// &lt;/summary&gt;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ModifyExistingElement</span> : ComponentSystem
-{
-    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> OnUpdate()
-    {
-        Entities.ForEach((DynamicBuffer&lt;U&gt; u) =&gt;
-        {
-            <span style="color:#66d9ef">var</span> element = <span style="color:#66d9ef">new</span> U {Var2 = <span style="color:#ae81ff">1</span>};
-            u.Add(element);
-            <span style="color:#66d9ef">var</span> temp = u<span style="color:#a6e22e">[0]</span>;
-            temp.Var2 += <span style="color:#ae81ff">1</span>;
-            u<span style="color:#a6e22e">[0]</span> = temp;
-            
-            <span style="color:#75715e">// THIS DOESN&#39;T WORK
-</span><span style="color:#75715e"></span>            <span style="color:#75715e">// u[0].Var1 = 2;
-</span><span style="color:#75715e"></span>        });
-    }
-}</code></pre></div>
-<p>​</p>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<ol>
-<li><p>Nested struct can be simply modify without further operation.</p></li>
-
-<li><p>Buffer element can contains more than one variables.</p></li>
-
-<li><p>Buffer iteration in ComponentSystem is different from Component iteration</p></li>
-</ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#">Entities.ForEach((<span style="color:#66d9ef">ref</span> Foo foo)=&gt;{}); <span style="color:#75715e">// iterate component
-</span><span style="color:#75715e"></span>
-Entities.ForEach((DynamicBuffer&lt;Fooo&gt; fooo)=&gt;{}); // iterate buffer</code></pre></div>
-<ol>
-<li>Buffer has no syntax sugar as nested struct, so I should modify it carefully.</li>
-</ol>
 ]]></content>
         </item>
         

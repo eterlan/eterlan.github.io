@@ -6,10 +6,20 @@
     <description>Recent content in Tutorial on Greeting.</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 24 Nov 2019 11:28:25 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 18:56:49 +0800</lastBuildDate>
     
 	<atom:link href="https://eterlan.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to fix Unity 2019.3 Editor Performance Problem</title>
+      <link>https://eterlan.com/posts/2019/12/how-to-fix-unity-2019.3-editor-performance-problem/</link>
+      <pubDate>Mon, 02 Dec 2019 18:56:49 +0800</pubDate>
+      
+      <guid>https://eterlan.com/posts/2019/12/how-to-fix-unity-2019.3-editor-performance-problem/</guid>
+      <description>These two months I had a lagging experience with untiy editor. I thought it was the problem of Odin or my old computer . But today I found it&amp;rsquo;s not at all. If you have this problem, maybe following steps would help you fix it.
+How to profile Editor  Open Window - &amp;gt; Analysis - &amp;gt; Profiler Click &amp;ldquo;PlayMode&amp;rdquo; button, and switch to Editor. Click the red round button, which is &amp;ldquo;Recording&amp;rdquo;, to stop at this frame.</description>
+    </item>
     
     <item>
       <title>gcp之重建实例</title>
